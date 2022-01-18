@@ -2,16 +2,21 @@
 Example smart contract deployed in go for posterity. Referenced: https://towardsdev.com/creating-a-simple-ethereum-smart-contract-in-golang-138b9439f64e
 
 # Commands to set before executing script
+```
 go env -w GO111MODULE=on
 go mod init
 go mod tidy
+```
 
 # Outputs
 ## Smart contract deployment:
+```
 ubuntu@ip-172-31-8-253:~/go_projects/src/github.com/testSmartContract$ go run deploy.go
 0x549129CECd93C366a4Fb327970CaA8604A54dbb2
+```
 
 ## Ganache output:
+```
 Available Accounts
 ==================
 (0) 0x45E22A133f580F0c801AdebB5B7ef0A163d7f734 (1000 ETH)
@@ -64,8 +69,10 @@ eth_call
 eth_call
 eth_call
 eth_call
+```
 
 ## Echo output:
+```
 ubuntu@ip-172-31-8-253:~/go_projects/src/github.com/testSmartContract$ go run main.go
 
    ____    __
@@ -81,3 +88,4 @@ ____________________________________O/_______
 {"time":"2022-01-18T19:05:15.31049746Z","id":"","remote_ip":"127.0.0.1","host":"localhost:1323","method":"GET","uri":"/greet/owenyuwono","user_agent":"curl/7.68.0","status":200,"error":"","latency":10238370,"latency_human":"10.23837ms","bytes_in":0,"bytes_out":13}
 {"time":"2022-01-18T19:05:20.723742891Z","id":"","remote_ip":"127.0.0.1","host":"localhost:1323","method":"GET","uri":"/greet/greetings","user_agent":"curl/7.68.0","status":200,"error":"","latency":9323748,"latency_human":"9.323748ms","bytes_in":0,"bytes_out":12}
 {"time":"2022-01-18T19:05:24.787828271Z","id":"","remote_ip":"127.0.0.1","host":"localhost:1323","method":"GET","uri":"/greet/randomtextforthequeryparameter","user_agent":"curl/7.68.0","status":200,"error":"","latency":9107618,"latency_human":"9.107618ms","bytes_in":0,"bytes_out":33}
+```
